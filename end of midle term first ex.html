@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>JavaScript Project</title>
+    <meta charset="utf-8">
+
+    <script language="JavaScript">
+        function openWin(){
+            myWindow=window.open("images/My_Pay.jpg","","width=280,height=400,top=300,left=400");
+        }
+                function openImformation(){
+            document.write('Imformation');
+            document.write("<br>");
+
+            document.write("<ul>");
+            document.write("<li>");
+            document.write('Father');
+            document.write("<br>");
+            document.write("<ol>");
+            document.write('Nope');
+            document.write("<br>");
+            document.write("</li>");
+            document.write("</ul>");
+
+
+            document.write("<ul>");
+            document.write("<li>");
+            document.write('Mother');
+            document.write("<ol>");
+            document.write('Phone Number : 010-75**-02**');
+            document.write("<br>");
+            document.write('Job : Coffee Barista');
+            document.write("<br>");
+            document.write('Birthday : 03-07');
+            document.write("<br>");
+            document.write('Civilian Number : ******-*******');
+            document.write("</ol>")
+            document.write("</ul>")
+
+            document.write('(Only One)');
+            
+        }
+        function FriendNumber(){
+            document.write('My Friend Phone Number');
+            document.write("<br>");
+
+            document.write("<ol>");
+            document.write("<li>");
+            document.write('장** : 010-1234-****');
+            document.write("<br>");
+            document.write("<li>");
+            document.write('한** : 010-2345-****');
+            document.write("<br>");
+            document.write("<li>");
+            document.write('전** : 010-3456-****');
+            document.write("<br>");
+            document.write("<li>");
+            document.write('김** : 010-4567-****');
+            document.write("<br>");
+            document.write("<li>");
+            document.write('안** : 010-5678-****');
+            document.write("<br>");
+            document.write("<li>");
+            document.write('임** : 010-6789-****');
+            document.write("<br>");
+            document.write("<li>");
+            document.write('하** : 010-7890-****');
+            document.write("<br>");
+            document.write('*');
+            document.write("<br>");
+            document.write('*');
+            document.write("<br>");
+            document.write('*');
+            document.write("<br>");
+            document.write('*');
+            document.write("<br>");
+            document.write('*');
+            document.write("<br>");
+            document.write('*');
+            document.write("</li>");
+            document.write("</ul>");
+        }
+    </script>
+
+
+	
+	<style>
+	*{box-sizing: border-box;}
+	[class*="col-"]{
+		float:left;
+		padding:15px;
+		border:1px solid black;
+	}
+	.row::after {
+ 		content: "";
+  	 	clear: both;
+  		display: table;
+  	}
+  	[class*="col-"] {
+       	width: 100%;
+   	}
+    @media only screen and (min-width:300px){
+    		/* For desktop: */
+    	.col-1 {width: 8.33%;}
+    	.col-2 {width: 16.66%;}
+    	.col-3 {width: 33.33%;}
+    	.col-4 {width: 50%;}
+    	.col-5 {width: 41.66%;}
+    	.col-6 {width: 50%;}
+    	.col-7 {width: 58.33%;}
+    	.col-8 {width: 66.66%;}
+    	.col-9 {width: 75%;}
+    	.col-10 {width: 83.33%;}
+    	.col-11 {width: 91.66%;}
+    	.col-12 {width: 100%;text-align: center;float:left}
+    }
+    @media only screen and (min-width: 500px){
+    		/* For desktop: */
+    	.col-m-1 {width: 8.33%;}
+    	.col-m-2 {width: 16.66%;}
+    	.col-m-3 {width: 33.33%;}
+    	.col-m-4 {width: 50%;}
+    	.col-m-5 {width: 41.66%;}
+    	.col-m-6 {width: 50%;text-align: center; float:left}
+    	.col-m-7 {width: 58.33%;}
+    	.col-m-8 {width: 66.66%;}
+    	.col-m-9 {width: 75%;}
+    	.col-m-10 {width: 83.33%;}
+    	.col-m-11 {width: 91.66%;}
+    	.col-m-12 {width: 100%;text-align: center; float:left}
+    }
+    @media only screen and (min-width: 768px){
+    		/* For desktop: */
+    	.col-t-1 {width: 8.33%;}
+    	.col-t-2 {width: 16.66%;}
+    	.col-t-3 {width: 33.33%;text-align:center;}
+    	.col-t-4 {width: 50%;}
+    	.col-t-5 {width: 41.66%;}
+    	.col-t-6 {width: 50%;}
+    	.col-t-7 {width: 58.33%;}
+    	.col-t-8 {width: 66.66%;}
+    	.col-t-9 {width: 75%;}
+    	.col-t10 {width: 83.33%;}
+    	.col-t-11 {width: 91.66%;}
+    	.col-t-12 {width: 100%;text-align:center;}
+    }
+		/*if the device width is bigger than 768px*/
+  	</style>
+
+</head>
+<body>
+
+        <div class="col-12 col-m-12 col-t-12"><h1>Project</h1></div>
+        <div class="col-12 col-m-4 col-t-3"><img src="images/family_1.jpg" width="65.1%"><button onclick="openImformation()" id="Parents">My Family Imformation</button></div>
+        <div class="col-12 col-m-4 col-t-3"><img src="images/friend_1.jpg" width="74%"><button onclick="FriendNumber()" id="Friend">My Friend Phone Number</button></div>
+        <div class="col-12 col-m-12 col-t-3"><img src="images/pay_2.jpg" width="86.5%"><input type="button" value="My Pay" onclick="openWin()" /></div>
+        <div class="col-12 col-m-12 col-t-8"><img src="images/timeline_1.png" width="80%">
+</body>
+</html>
